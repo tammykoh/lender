@@ -32,7 +32,7 @@ public class Main {
             Loan loan = Loans[i];
             // if the loan was repaid, add the interest to profit
             if (loan.getIsPaid()){
-                profit = profit + (loan.getAmounts() * loan.getInterestRates());
+                profit = loan.getProfit();
             }
         }
         return profit;
